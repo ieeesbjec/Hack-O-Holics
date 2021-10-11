@@ -1,0 +1,245 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+
+
+/*styling for about section*/
+.about_section{
+	padding:1em;
+	max-width:100%;
+	display:grid;
+	grid-template-columns: repeat(1,1fr);
+    
+}
+.about_heading{
+	color:#356480;
+	/* font-weight: 800; */
+	align-self: center;
+	justify-self: center;
+}
+.about_container{
+	
+	display:grid;
+	grid-template-columns: 1fr 1fr;
+	align-items: center;
+	justify-items: center;
+}
+.about_image{
+    width:80%;
+	height:300px;
+	justify-self: center;
+}
+.about_description{
+	font-weight: 600;
+}
+/*media query for about section*/
+@media all and (max-width:1000px){
+	.about_container{
+	
+		display:grid;
+		grid-template-columns: 1fr;
+		
+	}
+	.about_image{
+		width:80%;
+		height:200px;
+		justify-self: center;
+		align-self: end;
+	}
+}
+
+/*styling for themes section*/
+.themes_section{
+	padding:1em;
+	max-width:100%;
+	display:grid;
+	grid-template-columns: repeat(1,1fr);
+}
+.themes_heading{
+	color:#356480;
+	/* font-weight: 800; */
+	align-self: center;
+	justify-self: center;
+}
+.themes{
+	width:100%;
+	display:grid;
+	grid-template-columns: repeat(3,1fr);
+	gap:1em;
+	align-items: center;
+	justify-items: center;
+}
+.theme{
+	display:flex;
+	
+	width:300px;
+	height:15em;
+	background-color: blanchedalmond;
+}
+.one{
+	background-image: url('../images/AI_image.jpg');
+	background-image: rgb(0,0,0,0.5);
+	background-repeat: no-repeat;
+	align-items: flex-end;
+}
+.two{
+	background-image: url('../images/blockchain_image.jpg');
+	background-repeat: no-repeat;
+	align-items: flex-end;
+
+}
+.three{
+	background-image: url('../images/embedded_system_image.jpg');
+	background-repeat: no-repeat;
+	align-items: flex-end;
+}
+.four{
+	background-image: url('../images/IOT_image.jpg');
+	background-repeat: no-repeat;
+	align-items: flex-end;
+}
+.five{
+	background-image: url('../images/open_innovation_image.jpg');
+	background-repeat: no-repeat;
+	align-items: flex-end;
+}
+.overlay_effect{
+	background-color: rgb(53, 100, 128,0.9);
+	width:100%;
+	height:60px;
+	cursor:pointer;
+	
+	display:flex;
+	align-content: center;
+	justify-content: center;
+	
+}
+
+.overlay_effect>p{
+       color:white;
+	   font-weight: 500;
+	   font-size: 18px;
+	  margin-bottom: 0;
+}
+
+/*mediaquery for themes section*/
+
+@media all and (max-width:1032px){
+	.themes{
+		width:100%;
+		display:grid;
+		grid-template-columns: repeat(2,1fr);
+		gap:1em;
+		align-items: center;
+		justify-items: center;
+	}
+}
+@media all and (max-width:768px){
+	.themes{
+		width:100%;
+		display:grid;
+		grid-template-columns: repeat(1,1fr);
+		gap:1em;
+		align-items: center;
+		justify-items: center;
+	}
+}
+
+
+/*timeline section styling */
+.timeline-section{
+	background-color:rgb(53, 100, 128,0.9) ;
+	
+	min-height: 50vh;
+	padding: 50px 15px;
+}
+.timeline-section h3{
+    font-size:30px;
+    color:white;
+    text-align:center;
+    margin:10px;
+}
+.timeline-items{
+	max-width: 1000px;
+	margin:auto;
+	display: flex;
+	flex-wrap: wrap;
+	position: relative;
+}
+.timeline-items::before{
+	content: '';
+	position: absolute;
+	width: 2px;
+	height: 100%;
+	background-color: #E8F0F2;
+	left: calc(50% - 1px);
+}
+.timeline-item{
+	margin-bottom: 40px;
+	width: 100%;
+	position: relative;
+}
+.timeline-item:last-child{
+	margin-bottom: 0;
+}
+.timeline-item:nth-child(odd){
+    padding-right: calc(50% + 30px);
+	text-align: right;
+}
+.timeline-item:nth-child(even){
+    padding-left: calc(50% + 30px);
+}
+.timeline-dot{
+	height: 16px;
+	width: 16px;
+	background-color: #E8F0F2;
+	position: absolute;
+	left: calc(50% - 8px);
+	border-radius: 50%;
+	top:10px;
+}
+.timeline-date{
+	font-size: 18px;
+	color: white;
+
+	margin:6px 0 15px;
+}
+.timeline-content{
+    background-color: #E8F0F2;
+	padding: 30px;
+	border-radius: 5px;
+}
+.timeline-content h3{
+    font-size: 20px;
+	color: black;
+	margin:0 0 10px;
+	text-transform: capitalize;
+	font-weight: 500;
+}
+.timeline-content p{
+    color: black;
+	font-size: 16px;
+	font-weight: 300;
+	line-height: 22px;
+}
+@media(max-width: 767px){
+	.timeline-items::before{
+		left: 7px;
+	}
+	.timeline-item:nth-child(odd){
+		padding-right: 0;
+		text-align: left;
+	}
+	.timeline-item:nth-child(odd),
+	.timeline-item:nth-child(even){
+		padding-left: 37px;
+	}
+	.timeline-dot{
+		left:0;
+	}
+}
