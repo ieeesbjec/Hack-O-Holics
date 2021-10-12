@@ -5,6 +5,40 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+.logo_container{
+	display:grid;
+	grid-template-columns: repeat(2,1fr);
+	align-items:center;
+	justify-items: center;
+}
+.logo_logo_1{
+	width:17em;
+	height:8.5em;
+	border-radius: 0.5em;
+	box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;
+    display:grid;
+	grid-template-columns: 1fr;
+	align-items:center;
+	justify-items: center;
+}
+.logo_logo_2{
+	width:17em;
+	height:8.5em;
+	border-radius: 0.5em;
+	box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;
+    display:grid;
+	grid-template-columns: 1fr;
+	align-items:center;
+	justify-items: center;
+}
+/*logo section*/
+.logo_container{
+	display:grid;
+	grid-template-columns: repeat(1,1fr);
+	align-items:center;
+	justify-items: center;
+}
+
 
 
 /*styling for about section*/
